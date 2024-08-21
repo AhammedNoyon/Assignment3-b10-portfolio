@@ -30,9 +30,21 @@
           extend: {
             colors: {
               clifford: '#da373d',
+              normalDesc: 'rgba(73, 73, 73, 1)',
+              212121: 'rgba(33, 33, 33, 1)',
+              'banner-btn-color': 'rgba(171, 239, 95, 0.5)',
+              'arrow-color': 'rgba(171, 239, 95, 1)',
+              'h-linear-1st': 'rgba(255, 255, 255, 1)',
+              'h-linear-2st': 'rgba(255, 255, 255, 0)',
             },
             fontFamily: {
-              manropeFont:"Manrope",
+              manropeFont: 'Manrope',
+            },
+            fontSize: {
+              bannerTitleSize: '64px',
+            },
+            width: {
+              body: '95%',
             },
           },
         },
@@ -40,11 +52,46 @@
     </script>
   </head>
   <body class="font-manropeFont">
-    <header>
-
+    <!-- linear problem -->
+    <header class="bg-gradient-to-t from-h-linear-1st to-h-linear-2st mb-24">
+      <!-- header container -->
+      <div class="max-sm:w-body m-auto sm:w-3/5 pt-8 pb-10 sm:pt-12 sm:pb-24">
+        <!-- navbar section  -->
+      <nav></nav>
+      <!-- hero section  -->
+      <div>
+        <div class="hero">
+          <div class="hero-content flex-col">
+            <img class=" max-sm:w-3/4" src="./assets/banner.png" class="m-auto" />
+            <div class="mx-auto">
+              <h1
+                class="w-5/6 mx-auto lg:w-11/12 text-3xl md:text-5xl lg:text-bannerTitleSize font-extrabold text-212121 text-center sm:mt-5"
+              >
+                A barn house of this design has a striking appearance
+              </h1>
+              <p
+                class="sm:w-10/12 text-base font-medium text-normalDesc text-center mx-auto mt-4 sm:mt-6"
+              >
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents, and large windows that flood the space with natural
+                light.
+              </p>
+              <div class="text-center mt-5 lg:mt-8">
+                <button
+                class="btn bg-banner-btn-color rounded-full px-28 sm:px-6 border border-banner-btn-color"
+              >
+                Get Started
+                <i class="fa-solid fa-arrow-right -rotate-45 p-2 bg-arrow-color rounded-full "></i>
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
     </header>
-    <main>
-
-    </main>
+    <main class="max-sm:w-11/12 m-auto sm:w-3/5"></main>
+    <footer></footer>
   </body>
 </html>
