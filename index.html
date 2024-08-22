@@ -38,6 +38,10 @@
               'h-linear-1st': 'rgba(255, 255, 255, 1)',
               'h-linear-2st': 'rgba(255, 255, 255, 0)',
               'livable-bg': 'rgba(224,224,224,.2)',
+              'work-card1-bg': 'rgba(231, 193, 211, 1)',
+              'work-card2-bg': 'rgba(239, 218, 110, 1)',
+              'work-card3-bg': 'rgba(164, 218, 195, 1)',
+              'work-card4-bg': 'rgba(119, 170, 234, 1)',
             },
             fontFamily: {
               manropeFont: 'Manrope',
@@ -102,75 +106,179 @@
     </header>
     <main class="">
       <!-- liveable spaces & work process related section  -->
-      <section class="w-full m-auto mb-24 bg-livable-bg py-8 sm:py-24">
-        <!-- <img src="./assets/" alt=""> -->
-        <!-- section container  -->
+      <section
+        class="w-full m-auto sm:mb-24 bg-livable-bg py-8 sm:py-24 relative"
+      >
+        <img
+          class="max-sm:hidden absolute top-9 left-80"
+          src="./assets/Vector.png"
+          alt="Vector"
+        />
+        <!-- liveable spaces & work process related section container -->
         <div class="max-sm:w-11/12 sm:w-3/5 m-auto">
-          <!-- liveable spaces flex container -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-9">
+          <!-- section liveable spaces container  -->
+          <div>
+            <!-- liveable spaces flex container -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 sm:gap-9">
+              <div class="space-y-3 sm:space-y-4">
+                <div class="max-sm:text-center">
+                  <button class="px-4 py-2 bg-white rounded-full space-x-2">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    About Us
+                  </button>
+                </div>
+                <h3
+                  class="w-4/5 text-2xl sm:text-section-title-size font-bold text-212121 max-sm:text-center max-sm:mx-auto leading-tight"
+                >
+                  We design thoughtful, liveable spaces
+                </h3>
+                <p
+                  class="w-full sm:w-10/12 text-sm font-medium text-normalDesc max-sm:text-center max-sm:mx-auto max-sm:text-sm"
+                >
+                  The barn house captivates with its blend of rustic charm and
+                  modern sophistication, featuring weathered wood, sleek metal
+                  accents.
+                </p>
+                <!-- card  -->
+                <div
+                  class="bg-white card card-side shadow-md border-t border-t-white px-5 sm:px-6"
+                >
+                  <figure class="max-sm:mb-[74px]">
+                    <img src="./assets/commercial.png" alt="commercial" />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="card-title text-xl font-extrabold text-text-normalDesc"
+                    >
+                      Commercial
+                    </h2>
+                    <p class="sm:w-4/5 text-base font-medium text-cardDesc">
+                      The barn house captivates with its blend of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="bg-white card card-side shadow-md border-t border-t-white px-5 sm:px-6"
+                >
+                  <figure class="max-sm:mb-[74px]">
+                    <img src="./assets/residential.png" alt="residential" />
+                  </figure>
+                  <div class="card-body">
+                    <h2
+                      class="card-title text-xl font-extrabold text-text-normalDesc"
+                    >
+                      Residential
+                    </h2>
+                    <p class="sm:w-4/5 text-base font-medium text-cardDesc">
+                      The barn house captivates with its blend of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="max-sm:mt-6">
+                <img
+                  class="w-full m-auto rounded-2xl"
+                  src="./assets/Rectangle.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- section work process text container  -->
+          <div class="mt-8 sm:mt-24">
             <div class="space-y-3 sm:space-y-4">
-              <div class="max-sm:text-center">
+              <div class="text-center">
                 <button class="px-4 py-2 bg-white rounded-full space-x-2">
                   <i class="fa-solid fa-arrow-right"></i>
-                  About Us
+                  How we works
                 </button>
               </div>
               <h3
-                class="w-4/5 text-2xl sm:text-section-title-size font-bold text-212121 max-sm:text-center max-sm:mx-auto leading-tight"
+                class="w-4/5 text-2xl sm:text-section-title-size font-bold text-212121 text-center mx-auto"
               >
-                We design thoughtful, liveable spaces
+                Our Works Process
               </h3>
               <p
-                class="w-full sm:w-10/12 text-sm font-medium text-normalDesc max-sm:text-center max-sm:mx-auto max-sm:text-sm"
+                class="w-full lg:w-2/3 text-base font-medium text-normalDesc text-center mx-auto max-sm:text-sm"
               >
                 The barn house captivates with its blend of rustic charm and
                 modern sophistication, featuring weathered wood, sleek metal
                 accents.
               </p>
-              <!-- card  -->
-              <div
-                class="bg-white card card-side shadow-md border-t border-t-white px-5 sm:px-6"
-              >
-                <figure class="max-sm:mb-[74px]">
-                  <img src="./assets/commercial.png" alt="commercial" />
-                </figure>
-                <div class="card-body">
-                  <h2
-                    class="card-title text-xl font-extrabold text-text-normalDesc"
-                  >
-                    Commercial
-                  </h2>
-                  <p class="sm:w-4/5 text-base font-medium text-cardDesc">
-                    The barn house captivates with its blend of rustic charm and
-                    modern.
-                  </p>
+            </div>
+          </div>
+          <!-- section work process grid container  -->
+          <div
+            class="grid sm:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-6 sm:mt-8 max-sm:space-y-4"
+          >
+            <!-- card 1 -->
+            <div class="card bg-work-card1-bg">
+              <div class="p-6 space-y-2">
+                <div>
+                  <img src="./assets/concept.png" alt="" />
                 </div>
-              </div>
-              <div
-                class="bg-white card card-side shadow-md border-t border-t-white px-5 sm:px-6"
-              >
-                <figure class="max-sm:mb-[74px]">
-                  <img src="./assets/residential.png" alt="residential" />
-                </figure>
-                <div class="card-body">
-                  <h2
-                    class="card-title text-xl font-extrabold text-text-normalDesc"
-                  >
-                    Residential
-                  </h2>
-                  <p class="sm:w-4/5 text-base font-medium text-cardDesc">
-                    The barn house captivates with its blend of rustic charm and
-                    modern.
-                  </p>
-                </div>
+                <h2 class="card-title text-xl font-extrabold">Concept</h2>
+                <p
+                  class="w-4/5 sm:w-full text-base font-medium text-normalDesc"
+                >
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
               </div>
             </div>
-            <div class="max-sm:mt-6">
-              <img
-                class="w-full m-auto rounded-2xl"
-                src="./assets/Rectangle.png"
-                alt=""
-              />
+            <!-- card 2 -->
+            <div class="card bg-work-card2-bg">
+              <div class="p-6 space-y-2">
+                <div>
+                  <img src="./assets/flow-chart.png" alt="flow chart" />
+                </div>
+                <h2 class="card-title text-xl font-extrabold">
+                  Design Process
+                </h2>
+                <p
+                  class="w-4/5 sm:w-full text-base font-medium text-normalDesc"
+                >
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="card bg-work-card3-bg">
+              <div class="p-6 space-y-2">
+                <div>
+                  <img src="./assets/vision.png" alt="" />
+                </div>
+                <h2 class="card-title text-xl font-extrabold">Supervision</h2>
+                <p
+                  class="w-4/5 sm:w-full text-base font-medium text-normalDesc"
+                >
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div class="card bg-work-card4-bg">
+              <div class="p-6 space-y-2">
+                <div>
+                  <img
+                    src="./assets/budget-planning.png"
+                    alt="budget-planning"
+                  />
+                </div>
+                <h2 class="card-title text-xl font-extrabold">
+                  Budget Planning
+                </h2>
+                <p
+                  class="w-4/5 sm:w-full sm:text-base font-medium text-normalDesc"
+                >
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
             </div>
           </div>
         </div>
