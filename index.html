@@ -43,6 +43,9 @@
               'work-card2-bg': 'rgba(239, 218, 110, 1)',
               'work-card3-bg': 'rgba(164, 218, 195, 1)',
               'work-card4-bg': 'rgba(119, 170, 234, 1)',
+              // footer related
+              'footer-bg': 'rgba(28, 28, 28, 1)',
+              'footer-title': 'rgba(233, 233, 233, 1)',
             },
             fontFamily: {
               manropeFont: 'Manrope',
@@ -440,7 +443,7 @@
           </div>
         </div>
       </section>
-      <!-- next project related section -->
+      <!--contract with next project related section -->
       <section class="bg-next-project-pattern m-1 py-8 sm:py-24">
         <!-- section container  -->
         <div class="max-sm:w-11/12 sm:w-3/5 m-auto">
@@ -512,7 +515,9 @@
             ></textarea>
           </div>
           <div class="text-center mt-5 lg:mt-8">
-            <button class="w-full text-black font-extrabold text-xl bg-arrow-color rounded-full p-3">
+            <button
+              class="w-full text-black font-extrabold text-xl bg-arrow-color rounded-full p-3"
+            >
               Send Mail &nbsp;
               <i
                 class="fa-solid fa-arrow-right -rotate-45 p-2 bg-black text-white rounded-full"
@@ -522,8 +527,49 @@
         </div>
       </section>
     </main>
-    <footer>
-      
+    <footer class="bg-footer-bg">
+      <!-- footer container  -->
+        <div class="footer footer-center p-16 sm:p-24">
+        <div>
+          <div class="text-center">
+            <button
+              class="text-footer-title font-extrabold text-3xl rounded-full p-3"
+            >
+            <i
+                class="fa-solid fa-arrow-right -rotate-45 p-3 max-sm:p-2 bg-arrow-color text-white rounded-full"
+              ></i>
+              &nbsp; Send Mail
+            </button>
+          </div>
+          <p
+                class="w-full lg:w-2/3 text-base font-medium text-cardDesc text-center mx-auto max-sm:text-sm"
+              >
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+        </div>
+        <nav class="">
+          <ul class="max-sm:space-y-8 sm:flex sm:gap-28">
+            <li><a class="text-base font-medium text-footer-title" href="">Home</a></li>
+            <li><a class="text-base font-medium text-footer-title" href="">Services</a></li>
+            <li><a class="text-base font-medium text-footer-title" href="">Portfolio</a></li>
+            <li><a class="text-base font-medium text-footer-title" href="">Blogs</a></li>
+            <li><a class="text-base font-medium text-footer-title" href="">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="">
+          <button
+            class=" text-black font-extrabold text-xl bg-arrow-color rounded-full py-3 px-5"
+          >
+          Book Consult &nbsp;
+            <i
+              class="fa-solid fa-arrow-right -rotate-45 p-2 bg-black text-white rounded-full"
+            ></i>
+          </button>
+        </div>
+        </div>
+        <div class="block h-0.5 divide-gray-400 max-sm:w-1/5">
+          <hr>
+        </div>
     </footer>
   </body>
 </html>
