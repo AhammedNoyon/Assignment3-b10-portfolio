@@ -32,7 +32,7 @@
               clifford: '#da373d',
               normalDesc: 'rgba(73, 73, 73, 1)',
               cardDesc: 'rgba(115, 115, 115, 1)',
-              212121: 'rgba(33, 33, 33, 1)',
+              titleColor: 'rgba(33, 33, 33, 1)',
               'banner-btn-color': 'rgba(171, 239, 95, 0.5)',
               'arrow-color': 'rgba(171, 239, 95, 1)',
               'challenge-btn-bg': 'rgba(171, 239, 95, 0.2)',
@@ -71,7 +71,81 @@
       <!-- header container -->
       <div class="max-sm:w-body m-auto sm:w-3/5 pt-8 pb-10 sm:pt-12 sm:pb-24">
         <!-- navbar section  -->
-        <nav></nav>
+        <nav class="">
+          <div class="navbar px-0 pb-8">
+            <!-- navbar start logo  -->
+            <div class="navbar-start">
+              <div class="">
+                <button
+                  class="text-212121 font-extrabold text-3xl rounded-full p-3 flex items-center"
+                >
+                  <i
+                    class="fa-solid fa-arrow-right -rotate-45 py-2 px-2.5 max-sm:p-2 bg-arrow-color text-white rounded-full"
+                  ></i>
+                  &nbsp;Rinterio
+                </button>
+              </div>
+            </div>
+            <!-- navbar center items -->
+            <div class="navbar-center hidden lg:flex -ml-32">
+              <ul class="menu menu-horizontal px-1 text-base font-normal">
+                <li class="text-normalDesc font-extrabold"><a>Home</a></li>
+                <li class="text-cardDesc"><a>Services</a></li>
+                <li class="text-cardDesc"><a>Portfolio</a></li>
+                <li class="text-cardDesc"><a>Blogs</a></li>
+                <li class="text-cardDesc"><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <!-- navbar end  -->
+            <div class="navbar-end">
+              <!-- nav search icon & shopping icon & button-->
+              <div class="flex items-center gap-3 max-sm:hidden">
+                <div class=" bg-white border-2 rounded-full py-2 px-3 text-xl text-cardDesc"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div  class=" bg-white border-2 rounded-full py-2 px-3 text-xl text-cardDesc"> <i class="fa-solid fa-cart-shopping"></i></div>
+                <!-- navbar button  -->
+                <div class="max-sm:hidden">
+                  <button
+                    class="text-black font-extrabold text-xl bg-arrow-color rounded-full py-3 px-5 flex items-center"
+                  >
+                    Book Consult &nbsp;
+                    <i
+                      class="fa-solid fa-arrow-right -rotate-45 p-2.5 bg-black text-white rounded-full"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+              <!-- navbar dropdown  -->
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow text-2xl right-0 gap-2"
+                >
+                  <li class="text-normalDesc font-extrabold"><a>Home</a></li>
+                  <li class="text-black font-extrabold"><a>Services</a></li>
+                  <li class="text-black font-extrabold"><a>Portfolio</a></li>
+                  <li class="text-black font-extrabold"><a>Blogs</a></li>
+                  <li class="text-black font-extrabold"><a>Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
         <!-- hero section  -->
         <div>
           <div class="hero">
@@ -95,9 +169,9 @@
                   accents, and large windows that flood the space with natural
                   light.
                 </p>
-                <div class="text-center mt-5 lg:mt-8">
+                <div class="mt-5 lg:mt-8">
                   <button
-                    class="btn bg-banner-btn-color rounded-full px-28 sm:px-6 border border-banner-btn-color"
+                    class="btn bg-banner-btn-color rounded-full px-28 sm:px-6 border border-banner-btn-color flex items-center mx-auto"
                   >
                     Get Started
                     <i
@@ -474,7 +548,7 @@
           </div>
           <!-- next project related section input container  -->
           <div
-            class="grid max-sm:space-y-5 sm:gap-6 grid-cols-1 sm:grid-cols-2 mt-8"
+            class="grid max-sm:space-y-5 sm:gap-6 grid-cols-1 sm:grid-cols-2"
           >
             <input
               class="text-base font-medium text-cardDesc bg-white p-5 rounded-full border-2"
@@ -529,47 +603,68 @@
     </main>
     <footer class="bg-footer-bg">
       <!-- footer container  -->
-        <div class="footer footer-center p-16 sm:p-24">
+      <div class="footer footer-center p-16 sm:p-24">
         <div>
           <div class="text-center">
             <button
-              class="text-footer-title font-extrabold text-3xl rounded-full p-3"
+              class="text-footer-title font-extrabold text-3xl rounded-full p-3 flex items-center"
             >
-            <i
-                class="fa-solid fa-arrow-right -rotate-45 p-3 max-sm:p-2 bg-arrow-color text-white rounded-full"
+              <i
+                class="fa-solid fa-arrow-right -rotate-45 py-2 px-2.5 bg-arrow-color text-white rounded-full"
               ></i>
-              &nbsp; Send Mail
+              &nbsp; Rinterio
             </button>
           </div>
           <p
-                class="w-full lg:w-2/3 text-base font-medium text-cardDesc text-center mx-auto max-sm:text-sm"
-              >
-              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
-              </p>
+            class="w-full lg:w-2/3 text-base font-medium text-cardDesc text-center mx-auto max-sm:text-sm"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
         </div>
         <nav class="">
           <ul class="max-sm:space-y-8 sm:flex sm:gap-28">
-            <li><a class="text-base font-medium text-footer-title" href="">Home</a></li>
-            <li><a class="text-base font-medium text-footer-title" href="">Services</a></li>
-            <li><a class="text-base font-medium text-footer-title" href="">Portfolio</a></li>
-            <li><a class="text-base font-medium text-footer-title" href="">Blogs</a></li>
-            <li><a class="text-base font-medium text-footer-title" href="">Contact Us</a></li>
+            <li>
+              <a class="text-base font-medium text-footer-title" href=""
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="text-base font-medium text-footer-title" href=""
+                >Services</a
+              >
+            </li>
+            <li>
+              <a class="text-base font-medium text-footer-title" href=""
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="text-base font-medium text-footer-title" href=""
+                >Blogs</a
+              >
+            </li>
+            <li>
+              <a class="text-base font-medium text-footer-title" href=""
+                >Contact Us</a
+              >
+            </li>
           </ul>
         </nav>
         <div class="">
           <button
-            class=" text-black font-extrabold text-xl bg-arrow-color rounded-full py-3 px-5"
+            class="text-black font-extrabold text-xl bg-arrow-color rounded-full py-3 px-5"
           >
-          Book Consult &nbsp;
+            Book Consult &nbsp;
             <i
               class="fa-solid fa-arrow-right -rotate-45 p-2 bg-black text-white rounded-full"
             ></i>
           </button>
         </div>
-        </div>
-        <div class="block h-0.5 divide-gray-400 max-sm:w-1/5">
-          <hr>
-        </div>
+      </div>
+      <div class="block h-0.5 divide-gray-400 max-sm:w-1/5">
+        <hr />
+      </div>
     </footer>
   </body>
 </html>
