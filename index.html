@@ -32,7 +32,7 @@
               clifford: '#da373d',
               normalDesc: 'rgba(73, 73, 73, 1)',
               cardDesc: 'rgba(115, 115, 115, 1)',
-              titleColor: 'rgba(33, 33, 33, 1)',
+              titleColor: 'rgba(30, 30, 30, 1)',
               'banner-btn-color': 'rgba(171, 239, 95, 0.5)',
               'arrow-color': 'rgba(171, 239, 95, 1)',
               'challenge-btn-bg': 'rgba(171, 239, 95, 0.2)',
@@ -46,6 +46,8 @@
               // footer related
               'footer-bg': 'rgba(28, 28, 28, 1)',
               'footer-title': 'rgba(233, 233, 233, 1)',
+              // challenge part 2 related
+              'challenge2-bg': 'rgba(224,224,224)',
             },
             fontFamily: {
               manropeFont: 'Manrope',
@@ -80,7 +82,7 @@
                   class="text-212121 font-extrabold text-3xl rounded-full p-3 flex items-center"
                 >
                   <i
-                    class="fa-solid fa-arrow-right -rotate-45 py-2 px-2.5 max-sm:p-2 bg-arrow-color text-white rounded-full"
+                    class="fa-solid fa-arrow-right -rotate-45 py-2 px-2.5 max-sm:px-2 max-sm:py-1.5 bg-arrow-color text-white rounded-full"
                   ></i>
                   &nbsp;Rinterio
                 </button>
@@ -100,8 +102,16 @@
             <div class="navbar-end">
               <!-- nav search icon & shopping icon & button-->
               <div class="flex items-center gap-3 max-sm:hidden">
-                <div class=" bg-white border-2 rounded-full py-2 px-3 text-xl text-cardDesc"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <div  class=" bg-white border-2 rounded-full py-2 px-3 text-xl text-cardDesc"> <i class="fa-solid fa-cart-shopping"></i></div>
+                <div
+                  class="bg-white border-2 rounded-full py-2 px-3 text-xl text-cardDesc"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div
+                  class="bg-white border-2 rounded-full py-2 px-3 text-xl text-cardDesc"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
                 <!-- navbar button  -->
                 <div class="max-sm:hidden">
                   <button
@@ -435,7 +445,7 @@
           </div>
           <!-- card 2 -->
           <div>
-            <div class="card border p-6 mb-4 sm:mb-6">
+            <div class="card border p-6 max-sm:mb-6 sm:mb-0">
               <div class="">
                 <img src="./assets/img2.png" alt="" />
               </div>
@@ -443,7 +453,7 @@
           </div>
         </div>
         <!-- challenge part 1 related section flex card container  -->
-        <div class="lg:flex lg:gap-6 mt-4 sm:mt-8">
+        <div class="lg:flex lg:gap-6">
           <!-- card 1 -->
           <div class="max-sm:order-3">
             <div class="card border p-6 mb-4 sm:mb-6">
@@ -514,6 +524,90 @@
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- challenge part 2 related section  -->
+      <section class="bg-challenge2-bg mx-1">
+        <!-- challenge part 2 related section carousel container -->
+        <div class="max-sm:w-11/12 sm:w-3/5 m-auto">
+          <div class="carousel">
+            <!-- carousel 1 -->
+            <div id="item1" class="carousel-item w-full py-8 lg:py-24">
+              <!-- hero 1 -->
+              <div class="hero">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img
+                    src="./assets/carosel1.jpg"
+                    class="w-1/2 border max-sm:w-5/6 max-sm:-ml-1.5 border-gray-300 mx-auto rounded-lg"
+                  />
+                  <div>
+                    <h1
+                      class="w-4/5 leading-tight text-section-title-size font-bold max-sm:text-2xl"
+                    >
+                      Modern Bedroom Furniture Collection
+                    </h1>
+                    <p
+                      class="w-11/12 text-base font-medium text-cardDesc mt-3"
+                    >
+                      Upgrade your bedroom with our selection of modern
+                      furniture. From sleek bed frames to contemporary dressers,
+                      find pieces that blend style and functionality to elevate
+                      your space.
+                    </p>
+                    <div class="">
+                      <button class="mt-4 sm:mt-6 text-2xl font-bold text-normalDesc">
+                        Get Started&nbsp;
+                        <i
+                          class="fa-solid fa-arrow-right -rotate-45 p-2 bg-arrow-color rounded-full"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- carousel 2 -->
+            <div id="item2" class="carousel-item w-full">
+              <!-- hero 2 -->
+              <div class="hero">
+                <div class="hero-content flex lg:gap-20 flex-col lg:flex-row">
+                  <div class="flex-1">
+                    <img
+                    src="./assets/carosel2.webp"
+                    class="w-full border border-gray-300 max-sm:w-5/6 max-sm:-ml-1.5 mx-auto rounded-lg"
+                  />
+                  </div>
+                  <div class="flex-1">
+                    <h1
+                      class="w-4/5 leading-tight text-section-title-size font-bold max-sm:text-2xl"
+                    >
+                    Luxury Bedding for a Restful Sleep
+                    </h1>
+                    <p
+                      class="w-11/12 text-base font-medium text-cardDesc mt-3"
+                    >
+                    Indulge in our collection of premium bedding sets, crafted from the finest materials for unparalleled comfort and elegance. Experience the difference quality makes for a peaceful night’s rest.
+                    </p>
+                    <div class="">
+                      <button class="mt-4 sm:mt-6 text-2xl font-bold text-normalDesc">
+                        Get Started&nbsp;
+                        <i
+                          class="fa-solid fa-arrow-right -rotate-45 p-2 bg-arrow-color rounded-full"
+                        ></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- next page div  -->
+          <div class="flex w-full justify-center gap-2 py-2">
+            <span class="text-sm font-bold text-orange-600">Next page  :-</span>
+            <a href="#item1" class="btn bg-work-card3-bg btn-xs">1</a>
+            <a href="#item2" class="btn bg-work-card3-bg btn-xs">2</a>
+            <a href="#item3" class="btn bg-work-card3-bg btn-xs">3</a>
           </div>
         </div>
       </section>
