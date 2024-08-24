@@ -32,12 +32,12 @@
               clifford: '#da373d',
               normalDesc: 'rgba(73, 73, 73, 1)',
               cardDesc: 'rgba(115, 115, 115, 1)',
-              titleColor: 'rgba(30, 30, 30, 1)',
+              title: '#212121',
               'banner-btn-color': 'rgba(171, 239, 95, 0.5)',
               'arrow-color': 'rgba(171, 239, 95, 1)',
               'challenge-btn-bg': 'rgba(171, 239, 95, 0.2)',
               'h-linear-1st': 'rgba(255, 255, 255, 1)',
-              'h-linear-2st': 'rgba(255, 255, 255, 0)',
+              'h-linear-2st': 'rgb(244, 244, 244)',
               'livable-bg': 'rgba(224,224,224,.2)',
               'work-card1-bg': 'rgba(231, 193, 211, 1)',
               'work-card2-bg': 'rgba(239, 218, 110, 1)',
@@ -68,8 +68,7 @@
     </script>
   </head>
   <body class="font-manropeFont">
-    <!-- linear problem -->
-    <header class="bg-gradient-to-t from-h-linear-1st to-h-linear-2st mb-5">
+    <header class="bg-gradient-to-b from-h-linear-2st to-h-linear-1st mb-5">
       <!-- header container -->
       <div class="max-sm:w-body m-auto sm:w-3/5 pt-8 pb-10 sm:pt-12 sm:pb-24">
         <!-- navbar section  -->
@@ -82,7 +81,7 @@
                   class="text-212121 font-extrabold text-3xl rounded-full p-3 flex items-center"
                 >
                   <i
-                    class="fa-solid fa-arrow-right -rotate-45 py-2 px-2.5 max-sm:px-2 max-sm:py-1.5 bg-arrow-color text-white rounded-full"
+                    class="fa-solid fa-arrow-right -rotate-45 py-2 px-2.5 max-sm:px-2 max-sm:py-1.5 bg-arrow-color rounded-full"
                   ></i>
                   &nbsp;Rinterio
                 </button>
@@ -126,20 +125,8 @@
               </div>
               <!-- navbar dropdown  -->
               <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16"
-                    />
+                <div tabindex="0" role="button" class="bg-white border rounded-full py-2 px-3 text-xl text-normalDesc lg:hidden">
+                  <i class="fa-solid fa-bars"></i>
                   </svg>
                 </div>
                 <ul
@@ -167,7 +154,7 @@
               />
               <div class="mx-auto">
                 <h1
-                  class="w-5/6 mx-auto lg:w-11/12 text-3xl md:text-5xl lg:text-bannerTitleSize font-extrabold text-212121 text-center sm:mt-5"
+                  class="w-5/6 mx-auto lg:w-11/12 text-3xl md:text-5xl lg:text-bannerTitleSize font-extrabold text-title text-center sm:mt-5"
                 >
                   A barn house of this design has a striking appearance
                 </h1>
@@ -183,7 +170,7 @@
                   <button
                     class="btn bg-banner-btn-color rounded-full px-28 sm:px-6 border border-banner-btn-color flex items-center mx-auto"
                   >
-                    Get Started
+                    View Details
                     <i
                       class="fa-solid fa-arrow-right -rotate-45 p-2 bg-arrow-color rounded-full"
                     ></i>
@@ -219,7 +206,7 @@
                   </button>
                 </div>
                 <h3
-                  class="w-4/5 text-2xl sm:text-section-title-size font-bold text-212121 max-sm:text-center max-sm:mx-auto leading-tight"
+                  class="w-4/5 text-2xl sm:text-section-title-size font-bold text-title max-sm:text-center max-sm:mx-auto leading-tight"
                 >
                   We design thoughtful, liveable spaces
                 </h3>
@@ -289,7 +276,7 @@
                 </button>
               </div>
               <h3
-                class="w-4/5 text-2xl sm:text-section-title-size font-bold text-212121 text-center mx-auto mb-3 sm:mb-6"
+                class="w-4/5 text-2xl sm:text-section-title-size font-bold text-title text-center mx-auto mb-3 sm:mb-6"
               >
                 Our Works Process
               </h3>
@@ -390,7 +377,7 @@
               </button>
             </div>
             <h3
-              class="w-4/5 text-2xl sm:text-section-title-size font-bold text-212121 text-center mx-auto mb-3 sm:mb-6"
+              class="w-4/5 text-2xl sm:text-section-title-size font-bold text-title text-center mx-auto mb-3 sm:mb-6"
             >
               Our Latest Portfolio
             </h3>
@@ -433,7 +420,7 @@
                   </p>
                   <div class="">
                     <button class="">
-                      Get Started &nbsp;
+                      View Details &nbsp;
                       <i
                         class="fa-solid fa-arrow-right -rotate-45 p-2 bg-arrow-color rounded-full"
                       ></i>
@@ -453,7 +440,7 @@
           </div>
         </div>
         <!-- challenge part 1 related section flex card container  -->
-        <div class="lg:flex lg:gap-6">
+        <div class="flex max-sm:flex-col md:flex-col lg:gap-6">
           <!-- card 1 -->
           <div class="max-sm:order-3">
             <div class="card border p-6 mb-4 sm:mb-6">
@@ -467,7 +454,7 @@
             </div>
           </div>
           <!-- card hidden -->
-          <div class="sm:hidden max-sm:order-first">
+          <div class="sm:hidden max-sm:order-1">
             <div class="card border p-6 mb-4 sm:mb-6">
               <div class="">
                 <img
@@ -503,7 +490,7 @@
                   </p>
                   <div class="">
                     <button class="">
-                      Get Started &nbsp;
+                      View Details&nbsp;
                       <i
                         class="fa-solid fa-arrow-right -rotate-45 p-2 bg-arrow-color rounded-full"
                       ></i>
@@ -514,7 +501,7 @@
             </div>
           </div>
           <!-- card 3 -->
-          <div class="max-sm:order-last">
+          <div class="max-sm:order-4">
             <div class="card border p-6 mb-4 sm:mb-6">
               <div>
                 <img
@@ -535,29 +522,29 @@
             <!-- carousel 1 -->
             <div id="item1" class="carousel-item w-full py-8 lg:py-24">
               <!-- hero 1 -->
-              <div class="hero">
+              <div class="hero hover:bg-slate-100 transition-shadow duration-100 ease-in-out rounded-lg p-4 hover:shadow-lg hover:border-2">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                   <img
-                    src="./assets/carosel1.jpg"
-                    class="w-1/2 border max-sm:w-5/6 max-sm:-ml-1.5 border-gray-300 mx-auto rounded-lg"
+                    src="./assets/carosel3.jpg"
+                    class="w-1/2 border max-sm:w-full max-sm:-ml-0.5 border-gray-300 mx-auto rounded-lg"
                   />
                   <div>
                     <h1
-                      class="w-4/5 leading-tight text-section-title-size font-bold max-sm:text-2xl"
+                      class="w-2/3 max-sm:w-full leading-tight text-section-title-size text-title font-bold max-sm:text-2xl"
                     >
-                      Modern Bedroom Furniture Collection
+                    Look the modern bedroom to the night mode
                     </h1>
-                    <p
-                      class="w-11/12 text-base font-medium text-cardDesc mt-3"
-                    >
+                    <p class="w-11/12 max-sm:w-full text-base font-medium text-cardDesc mt-3">
                       Upgrade your bedroom with our selection of modern
                       furniture. From sleek bed frames to contemporary dressers,
                       find pieces that blend style and functionality to elevate
                       your space.
                     </p>
                     <div class="">
-                      <button class="mt-4 sm:mt-6 text-2xl font-bold text-normalDesc">
-                        Get Started&nbsp;
+                      <button
+                        class="mt-4 sm:mt-6 text-2xl font-bold text-normalDesc"
+                      >
+                        View Details&nbsp;
                         <i
                           class="fa-solid fa-arrow-right -rotate-45 p-2 bg-arrow-color rounded-full"
                         ></i>
@@ -571,27 +558,30 @@
             <div id="item2" class="carousel-item w-full">
               <!-- hero 2 -->
               <div class="hero">
-                <div class="hero-content flex lg:gap-20 flex-col lg:flex-row">
+                <div class="hero-content flex lg:gap-20 flex-col lg:flex-row  hover:bg-slate-100 hover:transition-shadow duration-100 ease-in-out rounded-lg hover:p-4 hover:shadow-lg hover:border-2">
                   <div class="flex-1">
                     <img
-                    src="./assets/carosel2.webp"
-                    class="w-full border border-gray-300 max-sm:w-5/6 max-sm:-ml-1.5 mx-auto rounded-lg"
-                  />
+                      src="./assets/carosel1.jpg"
+                      class="border w-full max-sm:-ml-0.5 mx-auto rounded-lg"
+                    />
                   </div>
                   <div class="flex-1">
                     <h1
-                      class="w-4/5 leading-tight text-section-title-size font-bold max-sm:text-2xl"
+                      class="w-4/5 max-sm:w-full text-title leading-tight text-section-title-size font-bold max-sm:text-2xl"
                     >
-                    Luxury Bedding for a Restful Sleep
+                      Luxury Bedding for a Restful Sleep
                     </h1>
-                    <p
-                      class="w-11/12 text-base font-medium text-cardDesc mt-3"
-                    >
-                    Indulge in our collection of premium bedding sets, crafted from the finest materials for unparalleled comfort and elegance. Experience the difference quality makes for a peaceful night’s rest.
+                    <p class="w-11/12 max-sm:w-full text-base font-medium text-cardDesc mt-3">
+                      Indulge in our collection of premium bedding sets, crafted
+                      from the finest materials for unparalleled comfort and
+                      elegance. Experience the difference quality makes for a
+                      peaceful night’s rest.
                     </p>
                     <div class="">
-                      <button class="mt-4 sm:mt-6 text-2xl font-bold text-normalDesc">
-                        Get Started&nbsp;
+                      <button
+                        class="mt-4 sm:mt-6 text-2xl font-bold text-normalDesc"
+                      >
+                        View Details&nbsp;
                         <i
                           class="fa-solid fa-arrow-right -rotate-45 p-2 bg-arrow-color rounded-full"
                         ></i>
@@ -602,9 +592,9 @@
               </div>
             </div>
           </div>
-          <!-- next page div  -->
+          <!-- next page container -->
           <div class="flex w-full justify-center gap-2 py-2">
-            <span class="text-sm font-bold text-orange-600">Next page  :-</span>
+            <span class="text-sm font-bold text-orange-600">Next page :-</span>
             <a href="#item1" class="btn bg-work-card3-bg btn-xs">1</a>
             <a href="#item2" class="btn bg-work-card3-bg btn-xs">2</a>
             <a href="#item3" class="btn bg-work-card3-bg btn-xs">3</a>
@@ -612,7 +602,7 @@
         </div>
       </section>
       <!--contract with next project related section -->
-      <section class="bg-next-project-pattern m-1 py-8 sm:py-24">
+      <section class="bg-next-project-pattern bg-cover bg-no-repeat m-1 py-8 sm:py-24">
         <!-- section container  -->
         <div class="max-sm:w-11/12 sm:w-3/5 m-auto">
           <!-- next project related section text container  -->
@@ -627,7 +617,7 @@
                 </button>
               </div>
               <h3
-                class="w-4/5 text-2xl sm:text-section-title-size font-bold text-212121 text-center mx-auto mb-3 sm:mb-6"
+                class="max-sm:w-2/3 text-2xl sm:text-section-title-size font-bold text-title text-center mx-auto mb-3 sm:mb-6"
               >
                 Let’s Discuss Next Project
               </h3>
@@ -642,7 +632,7 @@
           </div>
           <!-- next project related section input container  -->
           <div
-            class="grid max-sm:space-y-5 sm:gap-6 grid-cols-1 sm:grid-cols-2"
+            class="grid max-sm:space-y-5 sm:gap-6 grid-cols-1 sm:grid-cols-2 mt-8"
           >
             <input
               class="text-base font-medium text-cardDesc bg-white p-5 rounded-full border-2"
@@ -701,10 +691,10 @@
         <div>
           <div class="text-center">
             <button
-              class="text-footer-title font-extrabold text-3xl rounded-full p-3 flex items-center"
+              class="text-footer-title font-extrabold text-3xl rounded-full text-white p-3 flex items-center"
             >
               <i
-                class="fa-solid fa-arrow-right -rotate-45 py-2 px-2.5 bg-arrow-color text-white rounded-full"
+                class="fa-solid fa-arrow-right -rotate-45 py-2 px-2.5 bg-arrow-color rounded-full text-black"
               ></i>
               &nbsp; Rinterio
             </button>
